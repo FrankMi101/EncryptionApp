@@ -143,11 +143,9 @@
     <Content Include="Content\TopNavList.css" />
     <Content Include="Default.aspx" />
     <Content Include="EncryptionStr.aspx" />
-    <Content Include="images\delete.png" />
-    <Content Include="images\highLightRow.png" />
-    <Content Include="NotAllowView.aspx" />
+    <Content Include="images\boardlogo.GIF" />
+    <Content Include="images\curve.png" />
     <Content Include="Scripts\MoursPoint.js" />
-    <Content Include="StaffListPage.aspx" />
     <Content Include="StudentListPage.aspx" />
     <Content Include="Account\Web.config" />
     <Content Include="Content\bootstrap.min.css.map" />
@@ -162,89 +160,10 @@
     <Content Include="Content\JsonEmailTemplate.json" />
     <Content Include="Content\JsonStaff.json" />
     <Content Include="App_Code\GlyphIcon.cshtml" />
+    <None Include="Properties\PublishProfiles\EDS.pubxml" />
     <None Include="Properties\PublishProfiles\EPA2.pubxml" />
     <None Include="Properties\PublishProfiles\EPAAzure.pubxml" />
-    <None Include="Properties\PublishProfiles\LocalEPA.pubxml" />
     <Content Include="iBlankPage.html" />
-    <Content Include="images\action.png" />
-    <Content Include="images\action2.png" />
-    <Content Include="images\action3.png" />
-    <Content Include="images\ajax-loading.gif" />
-    <Content Include="images\app.bmp" />
-    <Content Include="images\BlueExplorer.png" />
-    <Content Include="images\BlueExplorerH.png" />
-    <Content Include="images\BlueExplorerV.png" />
-    <Content Include="images\boardlogo.GIF" />
-    <Content Include="images\Calendar.gif" />
-    <Content Include="images\chinaz13.ico" />
-    <Content Include="images\chinaz3.jpg" />
-    <Content Include="images\chinaz4.ico" />
-    <Content Include="images\chinaz5.ico" />
-    <Content Include="images\chinaz7.ico" />
-    <Content Include="images\chinaz8.jpg" />
-    <Content Include="images\chinaz8.png" />
-    <Content Include="images\chinaz80.png" />
-    <Content Include="images\chinaz9.ico" />
-    <Content Include="images\chinaz9.png" />
-    <Content Include="images\chinaz90.png" />
-    <Content Include="images\chinaz92.ico" />
-    <Content Include="images\chinaz9P.png" />
-    <Content Include="images\chinaz9T.png" />
-    <Content Include="images\close.ico" />
-    <Content Include="images\close.png" />
-    <Content Include="images\curve.png" />
-    <Content Include="images\Edit2.jpg" />
-    <Content Include="images\Edit2_Cancel.jpg" />
-    <Content Include="images\Edit2_confirm.jpg" />
-    <Content Include="images\Edit2_Hired.jpg" />
-    <Content Include="images\Edit2_New.jpg" />
-    <Content Include="images\Edit2_Notice.jpg" />
-    <Content Include="images\Edit2_Recommend.jpg" />
-    <Content Include="images\Edit2_Reposting.jpg" />
-    <Content Include="images\email.png" />
-    <Content Include="images\emailok.png" />
-    <Content Include="images\ep.png" />
-    <Content Include="images\feedback.png" />
-    <Content Include="images\help.png" />
-    <Content Include="images\help2.png" />
-    <Content Include="images\indicator.gif" />
-    <Content Include="images\item_0.png" />
-    <Content Include="images\item_done.png" />
-    <Content Include="images\item_open.png" />
-    <Content Include="images\Loading.gif" />
-    <Content Include="images\log.jpg" />
-    <Content Include="images\Login.png" />
-    <Content Include="images\lookFor.png" />
-    <Content Include="images\menu.png" />
-    <Content Include="images\menu2.png" />
-    <Content Include="images\menubar.png" />
-    <Content Include="images\MinistryDoc.png" />
-    <Content Include="images\MinistryDoc2.png" />
-    <Content Include="images\notes.png" />
-    <Content Include="images\Notice.png" />
-    <Content Include="images\OrangeExplorerH.png" />
-    <Content Include="images\OrangeExplorerV.png" />
-    <Content Include="images\pdfReport.bmp" />
-    <Content Include="images\pdfReport.png" />
-    <Content Include="images\pgBar1.png" />
-    <Content Include="images\pgBar12a.png" />
-    <Content Include="images\pgBar1a.png" />
-    <Content Include="images\pgBar2.png" />
-    <Content Include="images\pgBar23a.png" />
-    <Content Include="images\pgBar3.png" />
-    <Content Include="images\pgBar3a.png" />
-    <Content Include="images\pgBar3e.png" />
-    <Content Include="images\recover.png" />
-    <Content Include="images\Recover2.bmp" />
-    <Content Include="images\refresh.png" />
-    <Content Include="images\refreshY.png" />
-    <Content Include="images\save.png" />
-    <Content Include="images\setup.png" />
-    <Content Include="images\signature.png" />
-    <Content Include="images\signatureAsk.png" />
-    <Content Include="images\signatureDone.png" />
-    <Content Include="images\source.gif" />
-    <Content Include="images\submenu.png" />
     <Content Include="images\tcdsb.bmp" />
     <Content Include="images\TDSB_LogoWithText.jpg" />
     <Content Include="images\user.png" />
@@ -342,14 +261,12 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
-    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-    <Content Include="Site.Mobile.Master" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\JqueryUI\package.json" />
@@ -409,20 +326,6 @@
     <Compile Include="EncryptionStr.aspx.designer.cs">
       <DependentUpon>EncryptionStr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NotAllowView.aspx.cs">
-      <DependentUpon>NotAllowView.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="NotAllowView.aspx.designer.cs">
-      <DependentUpon>NotAllowView.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="StaffListPage.aspx.cs">
-      <DependentUpon>StaffListPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="StaffListPage.aspx.designer.cs">
-      <DependentUpon>StaffListPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="StudentListPage.aspx.cs">
       <DependentUpon>StudentListPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -467,20 +370,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

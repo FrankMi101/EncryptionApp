@@ -17,6 +17,9 @@ namespace SIC.SICSetup
             {
 
                 AppsPage.SetListValue(DropDownList1, DBConnection.CurrentDB);
+               LabelIV.Text = AppPrivateValue.ValueIV();  //   Environment.GetEnvironmentVariable("AppEncryptionIV");
+               LabelKey.Text = AppPrivateValue.ValueKey();
+
                 var cDB = DropDownList1.SelectedValue; //   DBConnection.CurrentDB ;
                 var constr = DBConnection.ConnectionSTR(cDB);
                 TextObjStr.Text = constr;

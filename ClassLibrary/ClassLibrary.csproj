@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommentBank.cs" />
     <Compile Include="EmailNotice.cs" />
     <Compile Include="GoPageItems.cs" />
     <Compile Include="MenuItems.cs" />

@@ -20,6 +20,12 @@ namespace SIC.Models
 
     public class WebService : System.Web.Services.WebService
     {
+        [WebMethod(Description = "Gets the environment variable value.")]
+        public string GetEnvironmentVariable(string evnName)
+        {
+            return Environment.GetEnvironmentVariable(evnName);
+        }
+
 
         [WebMethod]
         public string HelloWorld()

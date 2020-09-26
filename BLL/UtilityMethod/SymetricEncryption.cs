@@ -5,18 +5,17 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Configuration;
 using System.Web;
-
+using BLL;
 
 public class mySymetricEncryption
 {
 
-    private static readonly String IV = "SuFjcEmp/TE=";
-    private static readonly String Key = "KIPSToILGp6fl+3gXJvMsN4IajizYBBT";
     private static readonly String DateTimeFormatString = "yyyy/MM/dd HH:mm:ss";
     private static readonly String SsoFormatString = "userid={0}";
     private static readonly Int32 DefaultMaxMinutes = 30;
     private static readonly String ValidationKeySeparator = "***";
     private static readonly String CombinedUidValidationKeyFormatString = "{0}{1}{2}";
+
 
 
     public static string GetSsoQueryString(string userid)
@@ -163,6 +162,8 @@ public class mySymetricEncryption
     private static TripleDESCryptoServiceProvider GetCryptoProvider()
     {
         TripleDESCryptoServiceProvider provider = new TripleDESCryptoServiceProvider();
+        string IV = AppPrivateValue.ValueIV();  
+        string Key = AppPrivateValue.ValueKey(); 
         provider.IV = Convert.FromBase64String(IV);
         provider.Key = Convert.FromBase64String(Key);
         return provider;

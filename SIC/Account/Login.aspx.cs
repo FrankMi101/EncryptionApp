@@ -65,7 +65,7 @@ namespace SIC
         {
             try
             {
-                string loginRole = UserProfile.UserLoginRole(txtUserName.Text);//  Authentication.UserRole(txtUserName.Text);
+                string loginRole = "Admin";// UserProfile.UserLoginRole(txtUserName.Text);//  Authentication.UserRole(txtUserName.Text);
                 if (loginRole == "Other")
                 {
                     errorlabel.Text = WebConfig.MessageNotAllow(); // "You are not allow to run this application ! ";

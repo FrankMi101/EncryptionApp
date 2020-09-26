@@ -64,8 +64,7 @@ namespace BLL
                         return GeneralList.CommonList<T>(action, parameter);
                     case "AppsPageHelp":
                         return AppsPageHelp.CommonList<T>(action, parameter);
-                    case "CommentsBank":
-                        return CommentsBank.CommonList<T>(action, parameter);
+                 
                     default:
                         return AppsPageHelp.CommonList<T>(action, parameter);
                 }
@@ -87,9 +86,6 @@ namespace BLL
                 {
                     case "GeneralList":
                         return GeneralList.CommonValue<T>(action, parameter);
-            
-                    case "CommentsBank":
-                        return CommentsBank.CommonValue<T>(action, parameter);
                     case "AppsPageHelp":
                         return AppsPageHelp.CommonValue<T>(action, parameter);
                     default:
@@ -111,10 +107,7 @@ namespace BLL
                 {
                     case "GeneralList":
                         return GeneralList.GetSP(action) ;
-
-                    case "CommentsBank":
-                        return CommentsBank.GetSP(action);
-                    case "AppsPageHelp":
+                     case "AppsPageHelp":
                         return AppsPageHelp.GetSP(action);
                     default:
                         return AppsPageHelp.GetSP(action);

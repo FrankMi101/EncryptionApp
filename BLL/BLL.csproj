@@ -68,7 +68,7 @@
     <Compile Include="GetSPFrom.cs" />
     <Compile Include="ManageApp\GeneralList.cs" />
     <Compile Include="ManageApp\AppsPageHelp.cs" />
-    <Compile Include="ManageApp\CommentsBank.cs" />
+    <Compile Include="UtilityMethod\AppPrivateValue.cs" />
     <Compile Include="UtilityMethod\AssemblyListControl.cs" />
     <Compile Include="CommonOperate.cs" />
     <Compile Include="CommonParameters.cs" />

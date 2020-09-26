@@ -174,7 +174,7 @@
                                                <tr>
                                                    <td colspan="2" style="height: 20px; text-align: right; color: #cc0033; font-size: x-large;"> 
                                                             <asp:Label ID="lblApplication" runat="server" Text="Encryption/Decryption String"></asp:Label>
-                                                    (<a id="appLink" runat="server" href="~/Default.aspx">SIC</a>)
+                                                    (<a id="appLink" runat="server" href="~/Default.aspx">EDS</a>)
 
                                                    </td>
                                                </tr>

@@ -14,7 +14,7 @@ namespace SIC
             if (!Page.IsPostBack)
             {
                 Page.Response.Expires = 0;
-                SaveUserWorkingEnvironment();
+             //   SaveUserWorkingEnvironment();
                 //  string deviceScreen = WorkingProfile.ClientUserScreen;
                 // int xInt = deviceScreen.IndexOf("x");
                 //  string devicewidth = deviceScreen.Substring(0, xInt);
@@ -63,13 +63,13 @@ namespace SIC
                     Para4 = ""
                 };
 
-                AppsPage.BuildingList(rblLoginAS, "UserRole", parameter, WorkingProfile.UserRole);
+           //     AppsPage.BuildingList(rblLoginAS, "UserRole", parameter, WorkingProfile.UserRole);
 
-                LoginUserRole.InnerText = UserProfile.LoginUserName + " as " + rblLoginAS.SelectedItem.Text;
+             //   LoginUserRole.InnerText = UserProfile.LoginUserName + " as " + rblLoginAS.SelectedItem.Text;
 
                 hfCurrentUserRole.Value = WorkingProfile.UserRole;
 
-                GetUserLastWorkingValue();
+            //    GetUserLastWorkingValue();
             }
             catch (Exception ex)
             { }
