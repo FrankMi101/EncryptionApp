@@ -144,7 +144,9 @@
     <Content Include="Default.aspx" />
     <Content Include="EncryptionStr.aspx" />
     <Content Include="images\boardlogo.GIF" />
+    <Content Include="images\close.ico" />
     <Content Include="images\curve.png" />
+    <Content Include="images\submenu.png" />
     <Content Include="Scripts\MoursPoint.js" />
     <Content Include="StudentListPage.aspx" />
     <Content Include="Account\Web.config" />

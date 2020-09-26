@@ -3,26 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Configuration;
 
 namespace BLL
 {
-   public class AppPrivateValue
+    public class AppPrivateValue
     {
         private static readonly String IV = "SuFjcEmp/TE=";
         private static readonly String Key = "KIPSToILGp6fl+3gXJvMsN4IajizYBBT";
-    
-        public static string ValueIV ()
+
+        public static string ValueIV()
         {
-            string value = Environment.GetEnvironmentVariable("AppEncryptionIV");   // Doesn't work on Server side
+            string myKey = "AppEncryptionIV";
+            string value = Environment.GetEnvironmentVariable(myKey+1);   // Doesn't work on Server side
             if (value == null)
-                value = IV;        
+            {
+                value = WebConfigurationManager.AppSettings[myKey];
+                if (value == null || value == "")
+                    value = IV;
+            }
+
+
             return value;
         }
         public static string ValueKey()
-        {         
-            string value = Environment.GetEnvironmentVariable("AppEncryptionKey"); // Doesn't work on Server side           
+        {
+            string myKey = "AppEncryptionKey";
+            string value = Environment.GetEnvironmentVariable(myKey+1); // Doesn't work on Server side           
             if (value == null)
-                value = Key;
+            {
+                value = WebConfigurationManager.AppSettings[myKey];
+                if (value == null || value == "")
+                    value = Key;
+            }
+
             return value;
         }
     }
